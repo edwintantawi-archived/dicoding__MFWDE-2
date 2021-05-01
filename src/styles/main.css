@@ -456,9 +456,9 @@ background-color: var(--black);
 	justify-content: center;
 	align-items: center;
   margin: 32px auto;
-	gap: 4px;
 }
 .spinner-item {
+  margin: 2px;
   height: 40%;
   width: calc(var(--size) / 13);
   animation: spinner var(--animation-duration) ease-in-out infinite;
