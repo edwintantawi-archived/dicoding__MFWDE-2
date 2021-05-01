@@ -1,0 +1,51 @@
+
+@media screen and (min-width: 580px) {
+  .nav__toggle {
+    display: none;
+  }
+  .nav {
+    transform: none;
+    position: unset;
+    margin: 24px;
+    background: none;
+    border: none;
+  }
+
+  .nav__list {
+    display: flex;
+  }
+  .nav__link {
+    margin: 0 0 0 26px;
+    padding: 12px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hero__title {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .list {
+    padding: 100px 0;
+  }
+  .footer {
+    padding: 32px 16px;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero {
+    padding: 150px 0 120px;
+  }
+  .hero__content {
+    min-width: 1400px;
+  }
+  .hero__title {
+    font-size: 4.6rem;
+  }
+}
