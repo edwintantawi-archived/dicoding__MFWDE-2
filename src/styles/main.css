@@ -2,7 +2,7 @@
   --choco-light: #f6f2ea;
   --choco-medium: #c3aa70;
   --choco-dark: #322f1b;
-  --black: rgb(20, 20, 20);
+  --black: #141414;
 }
 * {
   box-sizing: border-box;
