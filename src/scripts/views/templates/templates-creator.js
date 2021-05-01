@@ -1,7 +1,7 @@
 import CONFIG from '../../globals/config';
 
 const createRestaurantCard = (restaurant) => `
-  <a class="list__item" href="#/detail/${restaurant.id}">
+  <a class="list__item" href="#/detail/${restaurant.id}" aria-label="${restaurant.name}">
       <div class="list__image--container">
         <img
           src="${CONFIG.BASE_IMAGE_URL}/${restaurant.pictureId}"
@@ -28,6 +28,16 @@ const createRestaurantCard = (restaurant) => `
         </div>
       </div>
     </a>
+`;
+
+const createLoader = () => `
+  <div class="spinner">
+    <div class="spinner-item"></div>
+    <div class="spinner-item"></div>
+    <div class="spinner-item"></div>
+    <div class="spinner-item"></div>
+    <div class="spinner-item"></div>
+  </div>
 `;
 
 const createList = (list) => {
@@ -72,7 +82,6 @@ const createDetailBody = (restaurant) => `
         </ul>
       </ul>
     </div>
-    
     <div class="detail__reviews">
       <h2>Customer Reviews :</h2>
       <form id="review-form" class="detail__form">
@@ -83,7 +92,7 @@ const createDetailBody = (restaurant) => `
       <ul>
         ${restaurant.customerReviews.map((review) => (`<li>
             <div>
-            <span class="avatar">${review.name[0].toUpperCase()}</span>
+            <span class="avatar">${review.name[0]}</span>
             </div>
             <div>
             <h3> ${review.name}</h3>
@@ -100,4 +109,5 @@ export {
   createRestaurantCard,
   createDetailBody,
   createHeroDetail,
+  createLoader,
 };

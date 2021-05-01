@@ -3,6 +3,7 @@
   --choco-medium: #c3aa70;
   --choco-dark: #322f1b;
   --black: #141414;
+  --size: 75px;
 }
 * {
   box-sizing: border-box;
@@ -458,4 +459,51 @@ h2 {
 .footer__copyright {
   color: var(--choco-dark);
 }
+
+/* loader */
+.spinner {
+	--animation-duration: 1000ms;
+	width: var(--size);
+	height: var(--size);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin: 32px auto;
+	gap: 4px;
+}
+.spinner-item {
+  height: 40%;
+  width: calc(var(--size) / 13);
+  animation: spinner var(--animation-duration) ease-in-out infinite;
+
+}
+@keyframes spinner {
+  25% {
+    transform: scaleY(2);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+}
+.spinner-item {
+  background-color: var(--choco-medium);
+}
+
+.spinner-item:nth-child(2) {
+  animation-delay: calc(var(--animation-duration) / 10);
+}
+
+.spinner-item:nth-child(3) {
+  animation-delay: calc(var(--animation-duration) / 10 * 2);
+}
+
+.spinner-item:nth-child(4) {
+  animation-delay: calc(var(--animation-duration) / 10 * 3);
+}
+
+.spinner-item:nth-child(5) {
+  animation-delay: calc(var(--animation-duration) / 10 * 4);
+}
+
 
