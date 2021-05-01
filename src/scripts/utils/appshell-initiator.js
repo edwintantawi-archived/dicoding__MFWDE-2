@@ -6,6 +6,12 @@ const AppShellInitiator = {
     window.addEventListener('scroll', (event) => {
       this._toggleHeader(event, header);
     });
+    const navigationLink = drawer.navigation.querySelectorAll('a');
+    navigationLink.forEach((navlink) => {
+      navlink.addEventListener('click', (event) => {
+        this._toggleDrawer({ event, toggler, drawer });
+      });
+    });
   },
   _toggleDrawer({ event, toggler, drawer }) {
     event.stopPropagation();
