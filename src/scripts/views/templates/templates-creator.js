@@ -64,7 +64,9 @@ const createDetailBody = (restaurant) => `
       <h2>Customer Reviews :</h2>
       <ul>
         ${restaurant.customerReviews.map((review) => (`<li>
+            <div>
             <span class="avatar">${review.name[0]}</span>
+            </div>
             <div>
             <h3> ${review.name}</h3>
             <p> ${review.review}</p>
