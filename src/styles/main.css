@@ -334,9 +334,11 @@ h2 {
   grid-template-columns: 500px 1fr;
   gap: 32px;
 }
-.detail__image{
+.detail__image{ 
   width: 100%;
   object-fit: cover;
+    position: sticky;
+  top: 97px;
 }
 .detail__text{
   padding: 0 16px;
@@ -411,6 +413,41 @@ h2 {
   font-weight: 700;
   font-size: 1.5rem;
 }
+
+/* review form */
+.detail__form{
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0 24px;
+}
+
+.detail__form input, .detail__form textarea{
+  padding: 12px 24px;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  width: 100%;
+  background-color: #2c2c2c;
+  color: white;
+  outline-color: var(--choco-medium);
+  border: none;
+  border-radius: 4px;
+}
+.detail__form textarea{
+  height: 200px;
+}
+.detail__form button{
+  padding: 12px 26px;
+  width: fit-content;
+  cursor: pointer;
+  background-color: var(--choco-medium);
+  color: var(--choco-dark);
+  font-weight: 700;
+  letter-spacing: 1px;
+  border: 0;
+  border-radius: 4px;
+  margin-left: auto;
+}
+
 /* footer */
 .footer {
   background-color: var(--choco-medium);
