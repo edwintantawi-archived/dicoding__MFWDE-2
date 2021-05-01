@@ -76,7 +76,7 @@ h2 {
   transition: 350ms;
 }
 .header--active {
-  background-color: var(--black);
+background-color: var(--black);
 }
 .header__content {
   display: flex;
@@ -107,9 +107,6 @@ h2 {
   backdrop-filter: blur(8px);
 }
 
-.layer--active {
-  visibility: visible;
-}
 
 /* nav */
 .nav {
@@ -126,10 +123,7 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.nav--active {
-  transform: translateY(0);
-  z-index: -1;
-}
+
 .nav__list {
   display: block;
   list-style: none;
@@ -147,11 +141,6 @@ h2 {
 
 .nav__link:hover {
   text-decoration: underline;
-}
-
-.nav__link--active {
-  font-weight: 700;
-  color: var(--choco-medium);
 }
 
 .nav__toggle {
@@ -181,7 +170,6 @@ h2 {
   margin: 3px 0;
   transition: 350ms;
 }
-
 /* hero */
 .hero {
   display: flex;
