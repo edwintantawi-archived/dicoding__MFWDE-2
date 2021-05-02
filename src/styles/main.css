@@ -49,6 +49,7 @@ h2 {
 .indicator{
   text-align: center;
   margin: 50px auto;
+  padding: 0 16px;
 }
 #content{
   flex: 1;
