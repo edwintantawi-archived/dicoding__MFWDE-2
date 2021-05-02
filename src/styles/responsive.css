@@ -1,7 +1,4 @@
 @media screen and (max-width: 579px){
-  .header--active {
-  background-color: var(--black);
-  }
   .nav--active {
   transform: translateY(0);
   z-index: -1;
@@ -32,6 +29,16 @@
   }
   .detail__menus{
   grid-template-columns: 1fr 1fr;
+  }
+  .list__item{
+    padding: 0;
+  }
+  .list__info h3 {
+  font-size: 0.8rem;
+  }
+
+  .list__info span {
+    font-size: 1rem;
   }
 }
 @media screen and (min-width: 700px) {

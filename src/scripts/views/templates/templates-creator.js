@@ -31,12 +31,14 @@ const createRestaurantCard = (restaurant) => `
 `;
 
 const createLoader = () => `
-  <div class="spinner">
-    <div class="spinner-item"></div>
-    <div class="spinner-item"></div>
-    <div class="spinner-item"></div>
-    <div class="spinner-item"></div>
-    <div class="spinner-item"></div>
+  <div class="indicator">
+    <div class="spinner">
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+    </div>
   </div>
 `;
 
@@ -105,9 +107,29 @@ const createDetailBody = (restaurant) => `
   </div>
 `;
 
+const createUnFavoriteButton = () => `
+  <button aria-label="remove from favorite" id="favorit-button" class="favorite">
+    <i class="fa fa-heart-o" aria-hidden="true"></i>
+  </button>
+`;
+const createFavoriteButton = () => `
+  <button aria-label="add to favorite" id="favorit-button" class="favorite">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+  </button>
+`;
+
+const createEmpty = () => `
+  <div class="indicator">
+    <p class="text-center">Oops ... it looks like your Favorites List is empty<h2>
+  </div>
+`;
+
 export {
   createRestaurantCard,
   createDetailBody,
   createHeroDetail,
   createLoader,
+  createFavoriteButton,
+  createUnFavoriteButton,
+  createEmpty,
 };

@@ -46,6 +46,10 @@ p {
 h2 {
   font-size: 1.5rem;
 }
+.indicator{
+  text-align: center;
+  margin: 50px auto;
+}
 #content{
   flex: 1;
 }
@@ -262,6 +266,7 @@ background-color: var(--black);
   flex-direction: column;
   cursor: pointer;
   color: white;
+  padding: 0 14px;
 }
 .list__data {
   padding: 8px;
@@ -301,19 +306,19 @@ background-color: var(--black);
 .list__info {
   background-color: var(--choco-medium);
   color: var(--choco-dark);
-  padding: 14px 42px;
+  padding: 12px 32px;
   letter-spacing: 2px;
   display: flex;
   justify-content: space-between;
   text-align: center;
 }
 .list__info h3 {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: 300;
 }
 
 .list__info span {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
 }
 /* list detail */
@@ -393,8 +398,8 @@ background-color: var(--black);
 .detail__reviews .avatar{
   display: grid;
   place-content: center;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background-color: rgb(155, 155, 155);
   border-radius: 50%;
   margin-right: 20px;
@@ -436,6 +441,25 @@ background-color: var(--black);
   margin-left: auto;
 }
 
+/* favorit button */
+.favorite{
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(54, 54, 54, 0.8);
+  display: grid;
+  place-content: center;
+  background-color: var(--choco-medium);
+  cursor: pointer;
+}
+.favorite i{
+  color: red;
+  font-size: 1.5rem;
+}
 /* footer */
 .footer {
   background-color: var(--choco-medium);
@@ -455,7 +479,7 @@ background-color: var(--black);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  margin: 32px auto;
+  margin: 0 auto;
 }
 .spinner-item {
   margin: 2px;

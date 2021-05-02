@@ -2,6 +2,7 @@
 import RestaurantSource from '../../data/restaurant-source';
 import CONFIG from '../../globals/config';
 import UrlParser from '../../routes/url-parser';
+import FavoriteButtonInitiator from '../../utils/favorit-button-initiator';
 import ReviewInitiator from '../../utils/review-initiator';
 import { createDetailBody, createHeroDetail, createLoader } from '../templates/templates-creator';
 
@@ -15,6 +16,7 @@ const Detail = {
           <div class="detail" id="root-content"></div>
         </section>
       </main>
+      <div id="favorite-Button-container"></div>
     `;
   },
   async afterRender() {
@@ -28,6 +30,18 @@ const Detail = {
     hero.style.backgroundImage = `url('${CONFIG.BASE_IMAGE_URL}/${restaurant.pictureId}')`;
     hero.innerHTML = createHeroDetail(restaurant);
     restaurantContainer.innerHTML = createDetailBody(restaurant);
+
+    FavoriteButtonInitiator.init({
+      favoriteButtonContainer: document.querySelector('#favorite-Button-container'),
+      restaurant: {
+        id: restaurant.id,
+        pictureId: restaurant.pictureId,
+        name: restaurant.name,
+        description: restaurant.description,
+        rating: restaurant.rating,
+        city: restaurant.city,
+      },
+    });
 
     ReviewInitiator.init({
       id,
