@@ -1,6 +1,7 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/responsive.css';
+import registerServiceWorker from './utils/sw-register';
 import App from './views/app';
 
 const app = new App({
@@ -15,6 +16,7 @@ const app = new App({
 
 window.addEventListener('load', () => {
   app.renderPage();
+  registerServiceWorker();
 });
 
 window.addEventListener('hashchange', () => {

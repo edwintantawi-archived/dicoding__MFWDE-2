@@ -109,12 +109,12 @@ const createDetailBody = (restaurant) => `
 
 const createUnFavoriteButton = () => `
   <button aria-label="remove from favorite" id="favorit-button" class="favorite">
-    <i class="fa fa-heart-o" aria-hidden="true"></i>
+    <i class="far fa-heart" aria-hidden="true"></i>
   </button>
 `;
 const createFavoriteButton = () => `
   <button aria-label="add to favorite" id="favorit-button" class="favorite">
-    <i class="fa fa-heart" aria-hidden="true"></i>
+    <i class="fas fa-heart" aria-hidden="true"></i>
   </button>
 `;
 
