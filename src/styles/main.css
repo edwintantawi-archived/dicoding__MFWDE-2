@@ -275,6 +275,7 @@ background-color: var(--black);
 
 .list__image {
   width: 100%;
+  height: auto;
   object-fit: cover;
   transition: 350ms ease-in-out;
 }

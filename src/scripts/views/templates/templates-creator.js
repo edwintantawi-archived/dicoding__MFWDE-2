@@ -6,6 +6,7 @@ const createRestaurantCard = (restaurant) => `
         <img
           src="${CONFIG.BASE_IMAGE_URL}/${restaurant.pictureId}"
           alt="${restaurant.name}"
+          crossorigin="anonymous"
           class="list__image"
         />
       </div>
