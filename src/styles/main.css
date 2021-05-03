@@ -417,7 +417,7 @@ background-color: var(--black);
 }
 
 .detail__form input, .detail__form textarea{
-  padding: 12px 24px;
+  padding: 14px 24px;
   font-size: 1rem;
   margin-bottom: 12px;
   width: 100%;
@@ -431,7 +431,7 @@ background-color: var(--black);
   height: 200px;
 }
 .detail__form button{
-  padding: 12px 26px;
+  padding: 16px 26px;
   width: fit-content;
   cursor: pointer;
   background-color: var(--choco-medium);
